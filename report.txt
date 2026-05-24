@@ -1,0 +1,24 @@
+--- SCAN REPORT ---
+
+
+1. Pay registration fee to get job.
+Result: SUSPICIOUS
+Flags:
+- registration fee
+
+
+2. Google internship software engineer.
+Result: SAFE
+
+
+3. Work from home unlimited earnings guaranteed.
+Result: SAFE
+
+
+4. No fee required for application.
+Result: SAFE
+
+
+5. Send money via UPI for processing.
+Result: SAFE
+
