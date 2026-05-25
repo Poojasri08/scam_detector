@@ -19,7 +19,24 @@ A Python-based cybersecurity project that detects suspicious job and internship 
 python main.py
 
 ## Future Improvements
-- Machine Learning integration
-- GUI version
-- URL detection
-- Email scam analysis
+- Machine Learning scam classification
+- Email phishing detection
+- URL reputation analysis
+- OCR screenshot scanning
+- Web version deployment
+
+## Screenshots
+
+
+![Result1](screenshots/screenshot1.png)
+
+![Result2](screenshots/screenshot2.png)
+
+![Result3](screenshots/screenshot3.png)
+
+![Result4](screenshots/screenshot4.png)
+
+![Result5](screenshots/screenshot5.png)
+
+![GUI](screenshots/screenshot6.png)
+
