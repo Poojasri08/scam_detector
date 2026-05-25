@@ -28,15 +28,15 @@ python main.py
 ## Screenshots
 
 
-![Result1](pooja/scam_detector/screenshots/screenshot1.png)
+![Result1](screenshots/screenshot1.png)
 
-![Result2](scam_detector/screenshot2.png)
+![Result2](screenshots/screenshot2.png)
 
-![Result3](scam_detector/screenshot3.png)
+![Result3](screenshots/screenshot3.png)
 
-![Result4](scam_detector/screenshot4.png)
+![Result4](screenshots/screenshot4.png)
 
-![Result5](scam_detector/screenshot5.png)
+![Result5](screenshots/screenshot5.png)
 
-![GUI](scam_detector/screenshot6.png)
+![GUI](screenshots/screenshot6.png)
 
