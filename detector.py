@@ -1,24 +1,40 @@
 def analyze_text(text):
 
-    scam_keywords = {
-        "registration fee": 3,
-        "mandatory training fee": 4,
-        "guaranteed placement": 4,
-        "investment": 3,
-        "telegram": 2,
-        "whatsapp": 2,
-        "otp": 5,
-        "aadhaar": 4,
-        "pan card": 4,
-        "bank details": 5,
-        "no interview": 3,
-        "earn money": 2,
-        "daily": 1,
-        "selected": 1,
-        "salary": 1,
-        "stipend": 1,
-        "free iphone": 5
-    }
+    scam_keywords = scam_keywords = {
+    "registration fee": 4,
+    "processing fee": 4,
+    "training fee": 4,
+    "mandatory training fee": 5,
+    "guaranteed placement": 5,
+    "investment": 4,
+    "telegram": 3,
+    "whatsapp": 2,
+    "otp": 6,
+    "aadhaar": 5,
+    "pan card": 5,
+    "bank details": 6,
+    "upi": 4,
+    "send money": 5,
+    "no interview": 4,
+    "earn money": 3,
+    "earn": 2,
+    "daily": 2,
+    "selected": 1,
+    "salary": 1,
+    "stipend": 1,
+    "free iphone": 6,
+    "work from home": 3,
+    "urgent": 2,
+    "limited slots": 2,
+    "apply now": 2,
+    "join today": 3,
+    "click here": 3,
+    "verification": 2,
+    "shortlisted": 2,
+    "reply within": 3,
+    "offer cancelled": 3,
+    "congratulations": 2
+}
 
     text = text.lower()
 
@@ -32,10 +48,10 @@ def analyze_text(text):
             score += weight
             flags.append(f"{word} (+{weight})")
 
-    if score >= 15:
+    if score >= 12:
         result = "EXTREME RISK"
 
-    elif score >= 8:
+    elif score >= 6:
         result = "HIGH RISK"
 
     elif score >= 4:
