@@ -1,62 +1,86 @@
-def analyze_text(text):
-    scam_keywords = [
-        "pay fee",
-        "registration fee",
-        "advance payment",
-        "quick money",
-        "guaranteed income"
-    ]
-
-    text = text.lower()
-    score = 0
-    flags = []
-
-    for word in scam_keywords:
-        if word in text:
-            score += 1
-            flags.append(word)
-
-    if score >= 2:
-        result = "HIGH RISK"
-    elif score == 1:
-        result = "SUSPICIOUS"
-    else:
-        result = "SAFE"
-
-    return result, flags
+from detector import analyze_text
 
 
-# Read input file
-with open("jobs.txt", "r") as file:
-    jobs = file.readlines()
+def scan_jobs():
 
-print("\n--- SCAN REPORT ---")
+    with open("jobs.txt", "r", encoding="utf-8") as file:
+        jobs = file.read().split("\n\n")
 
-# Analyze each job
-for i, job in enumerate(jobs, 1):
-    result, flags = analyze_text(job.strip())
+    report_lines = []
 
-    print(f"\n{i}. {job.strip()}")
-    print("Result:", result)
-
-    if flags:
-        print("Flags:")
-        for f in flags:
-            print("-", f)
-
-# Save report to file
-with open("report.txt", "w") as report:
-    report.write("--- SCAN REPORT ---\n\n")
+    report_lines.append("--- SCAN REPORT ---\n\n")
 
     for i, job in enumerate(jobs, 1):
-        result, flags = analyze_text(job.strip())
 
-        report.write(f"\n{i}. {job.strip()}\n")
-        report.write(f"Result: {result}\n")
+        job = job.strip()
+
+        if not job:
+            continue
+
+        result, flags, score, risk_percent = analyze_text(job)
+
+        line = f"{i}. {job}\n"
+        line += f"Result: {result}\n"
+        line += f"Risk Score: {score}\n"
+        line += f"Risk Percentage: {risk_percent}%\n"
 
         if flags:
-            report.write("Flags:\n")
-            for f in flags:
-                report.write(f"- {f}\n")
 
-        report.write("\n")
+            line += "Flags:\n"
+
+            for f in flags:
+                line += f"- {f}\n"
+
+        line += "\n"
+
+        print(line)
+
+        report_lines.append(line)
+
+    with open("report.txt", "w", encoding="utf-8") as report:
+
+        for item in report_lines:
+            report.write(item)
+
+    print("Report generated successfully.")
+
+
+def view_report():
+
+    try:
+
+        with open("report.txt", "r", encoding="utf-8") as report:
+
+            print(report.read())
+
+    except FileNotFoundError:
+
+        print("No report found.")
+
+
+while True:
+
+    print("\n=== SCAM DETECTOR MENU ===")
+    print("1. Scan Jobs")
+    print("2. View Report")
+    print("3. Exit")
+
+    choice = input("Enter choice: ")
+
+    if choice == "1":
+
+        scan_jobs()
+
+    elif choice == "2":
+
+        view_report()
+
+    elif choice == "3":
+
+        print("Exiting...")
+        break
+
+    else:
+
+        print("Invalid choice")
+        

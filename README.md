@@ -1,16 +1,25 @@
 # Scam Detector Python
 
-## Description
-Beginner Python project to detect scam-like job messages.
+A Python-based cybersecurity project that detects suspicious job and internship scams using weighted keyword analysis and risk scoring.
 
 ## Features
-- Keyword detection
-- Payment pattern flags
-- Phone number detection
-- Risk score output
+- Scam keyword detection
+- Risk score calculation
+- Risk percentage system
+- Paragraph-based scam analysis
+- Report generation
+- CLI menu system
 
-## Status
-Phase 1 complete – rule-based scam detection system (no AI/ML yet)
+## Technologies Used
+- Python
+- File Handling
+- Modular Programming
 
-## How to run
+## How to Run
 python main.py
+
+## Future Improvements
+- Machine Learning integration
+- GUI version
+- URL detection
+- Email scam analysis
