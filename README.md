@@ -28,7 +28,7 @@ python main.py
 ## Screenshots
 
 
-![Result1](C:\Users\pooja\OneDrive\Desktop\scam_detector/screenshot1.png)
+![Result1](screenshot1.png)
 
 ![Result2](screenshots/screenshot2.png)
 
