@@ -28,7 +28,7 @@ python main.py
 ## Screenshots
 
 
-![Result1](scam_detector/screenshot1.png)
+![Result1](screenshots/screenshot1.png)
 
 ![Result2](scam_detector/screenshot2.png)
 
