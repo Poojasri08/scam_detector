@@ -1,51 +1,92 @@
 --- SCAN REPORT ---
 
-1. Pay registration fee to get job.
-Google internship software engineer.
-Work from home unlimited earnings guaranteed.
-No fee required for application.
-Send money via UPI for processing.
-Congratulations candidate!
+1. Congratulations candidate!
 You are selected for our internship.
 Pay ₹499 registration fee to confirm your slot.
-Immediate hiring for cybersecurity interns.
+Result: SUSPICIOUS
+Risk Score: 4
+Risk Percentage: 40%
+Flags:
+- registration fee (+3)
+- selected (+1)
+
+2. Immediate hiring for cybersecurity interns.
 Salary ₹45,000/month.
 No interview needed.
 Join today.
-Dear student,
+Result: SUSPICIOUS
+Risk Score: 4
+Risk Percentage: 40%
+Flags:
+- no interview (+3)
+- salary (+1)
+
+3. Dear student,
 Your resume was shortlisted.
 Reply within 30 minutes or offer will be cancelled.
-Work from home typing job.
+Result: SAFE
+Risk Score: 0
+Risk Percentage: 0%
+
+4. Work from home typing job.
 Earn ₹3000 daily.
 No experience required.
-Contact HR only on Telegram for joining process.
-Send Aadhaar, PAN card, bank details and OTP for verification.
-Government approved internship with ₹25,000 stipend.
-Apply through WhatsApp now.
-Mandatory training fee ₹2,999.
-100% guaranteed placement after completion.
-You can earn money by liking YouTube videos.
-Start with ₹1000 investment.
-Selected candidates receive free iPhone, laptop and ₹80,000 stipend.
+Result: SAFE
+Risk Score: 1
+Risk Percentage: 10%
+Flags:
+- daily (+1)
+
+5. Contact HR only on Telegram for joining process.
+Result: SAFE
+Risk Score: 2
+Risk Percentage: 20%
+Flags:
+- telegram (+2)
+
+6. Send Aadhaar, PAN card, bank details and OTP for verification.
 Result: EXTREME RISK
-Risk Score: 50
+Risk Score: 18
 Risk Percentage: 100%
 Flags:
-- registration fee (+3)
-- mandatory training fee (+4)
-- guaranteed placement (+4)
-- investment (+3)
-- telegram (+2)
-- whatsapp (+2)
 - otp (+5)
 - aadhaar (+4)
 - pan card (+4)
 - bank details (+5)
-- no interview (+3)
+
+7. Government approved internship with ₹25,000 stipend.
+Apply through WhatsApp now.
+Result: SAFE
+Risk Score: 3
+Risk Percentage: 30%
+Flags:
+- whatsapp (+2)
+- stipend (+1)
+
+8. Mandatory training fee ₹2,999.
+100% guaranteed placement after completion.
+Result: HIGH RISK
+Risk Score: 8
+Risk Percentage: 80%
+Flags:
+- mandatory training fee (+4)
+- guaranteed placement (+4)
+
+9. You can earn money by liking YouTube videos.
+Start with ₹1000 investment.
+Result: SUSPICIOUS
+Risk Score: 5
+Risk Percentage: 50%
+Flags:
+- investment (+3)
 - earn money (+2)
-- daily (+1)
+
+10. Selected candidates receive free iPhone, laptop and ₹80,000 stipend.
+Result: SUSPICIOUS
+Risk Score: 7
+Risk Percentage: 70%
+Flags:
 - selected (+1)
-- salary (+1)
 - stipend (+1)
 - free iphone (+5)
 
